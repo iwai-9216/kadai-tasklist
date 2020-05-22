@@ -13,8 +13,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import models.Task;
+import models.validators.TaskValidator;
 import utils.DBUtil;
-import validators.TaskValidator;
 
 @WebServlet("/create")
 public class CreateServlet extends HttpServlet {
@@ -61,7 +61,6 @@ public class CreateServlet extends HttpServlet {
                 // indexのページにリダイレクト
                 response.sendRedirect(request.getContextPath() + "/index");
             }
-            response.sendRedirect(request.getContextPath() + "/index");
         }
     }
 }
