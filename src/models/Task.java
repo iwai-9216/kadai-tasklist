@@ -16,6 +16,10 @@ import javax.persistence.Table;
     @NamedQuery(
             name = "getAllTasks",
             query = "SELECT t FROM Task AS t ORDER BY t.id DESC"
+            ),
+    @NamedQuery(
+            name = "getTasksCount",
+            query = "SELECT COUNT(t) FROM Task AS t"
             )
 })
 @Table(name = "tasks")
@@ -41,7 +45,6 @@ public class Task {
     public void setId(Integer id) {
         this.id = id;
     }
-
     public String getContent() {
         return content;
     }
