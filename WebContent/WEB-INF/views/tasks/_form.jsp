@@ -9,8 +9,7 @@
 
     </div>
 </c:if>
-
-<label for="content">タスク</label><br />
+<label for="content">詳細</label><br />
 <input type="text" name="content" value="${task.content}" />
 <br /><br />
 
