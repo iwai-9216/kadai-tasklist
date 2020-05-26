@@ -13,12 +13,12 @@ body {
 
 #content {
     width: 94%;
-    margin: 15px;
-    padding: 3%;
+    margin-top: 15px;
+    padding-left: 3%;
 }
 
 h1 {
-    width : 94%;
+    width: 94%;
     padding-top: 17px;
     padding-left: 3%;
     font-size: 24px;
@@ -27,7 +27,7 @@ h1 {
 
 h2 {
     font-size: 36px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 li {
@@ -64,7 +64,7 @@ td {
     padding: 10px 2%;
 }
 
-botton {
+button {
     font-size: 14px;
     padding: 5px 10px;
 }
@@ -79,7 +79,7 @@ botton {
     padding-left: 2%;
     padding-bottom: 28px;
     margin-bottom: 15px;
-    color: #155724;
+    color: #114514;
     background-color: #d4edda;
 }
 

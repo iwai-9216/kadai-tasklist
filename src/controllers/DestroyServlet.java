@@ -20,7 +20,7 @@ public class DestroyServlet extends HttpServlet {
         super();
     }
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String _toDo = (String)request.getParameter("_toDo");
         if(_toDo != null && _toDo.equals(request.getSession().getId())) {
             EntityManager em = DBUtil.createEntityManager();
